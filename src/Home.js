@@ -98,7 +98,7 @@ function About() {
         return (
         <div class="split left">
 
-          <div className="container">
+//           <div className="container">
             <table >
             <thead class="thead-dark">
               
