@@ -66,15 +66,12 @@ function About() {
 
   const deleteUser = async (id) => {
     const userDoc = doc(db, "users", id);
-    const userDoc2 = doc(db, "mobile", id);
+
     await deleteDoc(userDoc);
     navigate('./home1');
 
   };
-var a;
-var b;
-  //useeffect hook imported at the top
-  //useeffect is a function which is call whenever page reder
+
 
   useEffect(() => {
     //async use to fetch data through api
@@ -93,27 +90,14 @@ var b;
    return (
      <div className="App">
           <NavBar />
-{/* <input
-         placeholder="Name..."
-                  onChange={(event) => {
-          setNewName(event.target.value);
-        }}
-      />
-      <input
-        type="number"
-        placeholder="Age..."
-        onChange={(event) => {
-          setNewAge(event.target.value);
-        }}
-      />
-      <button onClick={createUser}> Create User</button> */}
+
         <h1><b>Home Page</b></h1>
     <h2>NGO and user data</h2>
 
       {users.map((user) => {
         return (
         <div class="split left">
-          {/* <div className="container"> */}
+
           <div className="container">
             <table >
             <thead class="thead-dark">
@@ -123,15 +107,7 @@ var b;
                     <th>Name     </th>
                     <th>Phone No    </th>
                     <th>gender</th>
-                    {/* <th>   <button
-              onClick={() => {
-                // deleteUser(user.id);
-                a=user.id;
-              }}
-            >
-        
-              Delete User
-            </button></th> */}
+              
                 </tr>
             </thead>
          
