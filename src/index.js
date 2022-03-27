@@ -25,7 +25,8 @@ import UnCookedFood from "./UncookedFood";
 import OtherThings from "./OtherThings";
 import FV from "./Fruits&Vegies";
 import L from "./Loginfile";
-import Home2 from "./Home1";
+
+import DU from "./Deleteuser";
 
 render(
   <BrowserRouter>
@@ -37,7 +38,7 @@ render(
       <Route path="/home" element={<About />} />
       <Route path="/FV" element={<FV />} />
       <Route path="/login" element={<L/>}/>
-      <Route path="/home/home1" element={<Home2/>}/>
+      <Route path="/deleteuser" element={<DU/>}/>
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
